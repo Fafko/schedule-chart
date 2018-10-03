@@ -1,0 +1,54 @@
+@import (inline) "~normalize.css";
+@import "components/topPanel";
+@import "components/timePicker";
+@import "components/configurator";
+@import "components/output";
+@import "components/scheduleList";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background: #ffffff;
+  padding-top: 51px;
+}
+
+.select {
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 2px;
+  border: 1px solid #cecece;
+  line-height: 32px;
+  padding: 0 28px 0 8px;
+  background: rgba(0, 0, 0, 0.025) url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiNkNmQ2ZDYiLz4KICA8L2c+Cjwvc3ZnPgo=);
+  background-repeat: no-repeat;
+  background-position: right 5px top 8px;
+}
+
+.button {
+  background: white;
+  padding: 0 8px;
+  text-decoration: none;
+  color: currentColor;
+  cursor: pointer;
+  outline: none;
+  line-height: 32px;
+  border-radius: 2px;
+  border: 1px solid #cecece;
+
+  &.__info {
+    color: #0095f3;
+    border-color: #0095f3;
+  }
+
+  &.__warning {
+    color: #F44336;
+    border-color: #F44336;
+  }
+
+}
